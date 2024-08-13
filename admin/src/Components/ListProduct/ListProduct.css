@@ -1,0 +1,90 @@
+/* General container for list product */
+.list-product {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-list-format {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  font-weight: bold;
+  background-color: #dfd5d551;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-align: center; /* Centering text */
+}
+
+.product-list-format p {
+  padding: 10px;
+}
+
+.listing-allProducts {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Each product detail in its respective column */
+  gap: 10px;
+  text-align: center; /* Centering content */
+}
+
+.listproduct-format-main {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: contents; /* Use contents to align each child element directly under the header */
+}
+
+.listproduct-product-icon {
+  width: 80px; /* Fixed size for consistency */
+  height: auto;
+  border-radius: 6px;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.listproduct-remove-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin: 0 auto; /* Center the icon horizontally */
+}
+
+.listproduct-format-main p {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text horizontally and vertically */
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .product-list-format {
+      grid-template-columns: repeat(3, 1fr); /* Adjusting to fit smaller screens */
+  }
+
+  .listing-allProducts {
+      grid-template-columns: repeat(3, 1fr); /* Matching the header columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list-format {
+      grid-template-columns: repeat(2, 1fr); /* Further adjustment for small screens */
+  }
+
+  .listing-allProducts {
+      grid-template-columns: repeat(2, 1fr); /* Matching the header columns */
+  }
+
+  .listproduct-format-main {
+      padding: 10px;
+  }
+}

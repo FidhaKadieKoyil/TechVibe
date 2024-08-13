@@ -1,0 +1,220 @@
+.item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Make the item width 100% of its container */
+  max-width: 350px; /* Maximum width for larger screens */
+}
+
+.item p {
+  margin: 6px 0px;
+}
+
+.item-prices {
+  display: flex;
+  gap: 20px;
+}
+
+.item-price-new {
+  color: #374151;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item-price-old {
+  color: #8c8c8c;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  width: 100%;
+  height: 200px; /* Set a fixed height to ensure consistent size */
+  object-fit: contain; /* Ensure the entire image fits within the container */
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 8px;
+  border-radius: 8px 8px 0 0;
+}
+.item h3 {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #343a40;
+  height: 40px; /* Fixed height to ensure uniformity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 8px 0;
+  height: 24px; /* Fixed height for consistent alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Base styles for larger screens */
+.shop-category {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.shopcategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 82%;
+}
+
+.shopcategory-indexSort {
+  display: flex;
+  margin: 0px 170px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopcategory-sort {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid #888;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.shopcategory-sort img {
+  width: 12px;
+  height: auto;
+  margin-left: 5px;
+}
+
+.shopcategory-indexSort p span {
+  font-weight: 600;
+}
+
+.shopcategory-products {
+  display: grid;
+  margin: 20px 170px;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns per row for desktop */
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Media Queries */
+
+/* iPad and smaller tablets */
+@media (max-width: 1024px) {
+  .shopcategory-banner {
+    width: 90%;
+  }
+
+  .shopcategory-indexSort {
+    margin: 0px 20px;
+  }
+
+  .shopcategory-products {
+    margin: 20px 20px;
+    column-gap: 25px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row for tablets */
+    row-gap: 30px;
+  }
+
+  .shopcategory-sort {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .shopcategory-sort img {
+    width: 14px;
+  }
+
+  .shopcategory-loadmore {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .item {
+    width: 90%; /* Reduced width for tablets */
+    max-width: 300px;
+  }
+
+  .item img {
+    width: 100%;
+    height: 180; /* Maintain aspect ratio */
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .shopcategory-banner {
+    width: 95%;
+  }
+
+  .shopcategory-indexSort {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 10px;
+  }
+
+  .shopcategory-sort {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .shopcategory-sort img {
+    width: 12px;
+  }
+
+  .shopcategory-products {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row for mobile */
+    row-gap: 20px;
+  }
+
+  .shopcategory-loadmore {
+    width: 180px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .item {
+    width: 100%; /* Full width for mobile */
+    max-width: 250px; /* Adjust max-width for mobile */
+  }
+
+  .item img {
+    width: 100%;
+    height: 160px; /* Maintain aspect ratio */
+  }
+}

@@ -1,0 +1,141 @@
+/* General Styles for Hero Component */
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.hero-text p {
+  color: #171717;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 250px;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 20px;
+  background: #ff4141;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-latest-btn:hover {
+  background: #e03e3e;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.hero-right img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet and Up */
+/* Tablet and Up */
+@media (min-width: 768px) {
+  .hero {
+    height: auto;
+    flex-direction: row;
+    padding: 2rem; /* Reduced padding to decrease container size */
+  }
+
+  .hero-left {
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 50px; /* Reduced left padding */
+    padding-right: 25px; /* Reduced right padding */
+    flex: 0.6; /* Decreased container width to 60% */
+  }
+
+  .hero-text p {
+    font-size: 2.5rem; /* Adjusted font size for better balance */
+  }
+
+  .hero-right {
+    flex: 1.4; /* Increased image container width to 140% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-right img {
+    width: 90%; /* Increased image width */
+    height: auto;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+
+  .hero-latest-btn {
+    max-width: 200px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .hero-right img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+}
+
+/* Animation */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

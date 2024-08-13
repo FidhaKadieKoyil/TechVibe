@@ -1,0 +1,62 @@
+/* Footer */
+
+.footer {
+    background: linear-gradient(360deg, #a8a2a895, #e1ffea22 60%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle top shadow */
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo img {
+    height: 60px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .footer-logo p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style: none; /* Remove default list styling */
+    display: flex;
+    gap: 2rem; /* Space between links */
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .footer-links li {
+    font-size: 1rem;
+    color: #555; /* Medium grey text color */
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .footer-links li:hover {
+    color: #ff4141; /* Change color on hover */
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    color: #777; /* Light grey text color */
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    width: 100%; /* Full width for the horizontal line */
+  }
+  
+  .footer-copyright hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Light grey line */
+    margin: 1rem 0;
+  }
+  

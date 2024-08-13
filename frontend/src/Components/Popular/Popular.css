@@ -1,0 +1,71 @@
+/* Popular Component Styles */
+.popular {
+  padding: 20px;
+  background-color: #f8f8f8; /* Light grey background */
+  text-align: center;
+  border-radius: 8px; /* Rounded corners */
+  margin: 0 auto; /* Center alignment without extra margin */
+  max-width: 100%; /* Full width of container */
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.popular h1 {
+  font-size: 2rem;
+  color: #333; /* Dark grey text */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.popular hr {
+  border: none;
+  border-top: 2px solid #e0e0e0; /* Light grey line */
+  margin: 10px auto; /* Space below the title and center alignment */
+  width: 50px; /* Fixed width for styling */
+}
+
+.popular-item {
+  display: grid;
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center items */
+}
+
+/* Display 4 products on desktop */
+@media (min-width: 1025px) {
+  .popular-item {
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  }
+}
+
+/* Display 3 products on tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .popular-item {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  }
+}
+
+/* Display 2 products on mobile */
+@media (max-width: 767px) {
+  .popular-item {
+    column-gap: 40px;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+
+  .popular-item .item {
+    width: 100%; /* Full width of container on small screens */
+    max-width: 300px; /* Max width to prevent items from becoming too large */
+  }
+}
+
+.popular-item .item {
+  background: white;
+  border: 1px solid #e0e0e0; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.popular-item .item:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}

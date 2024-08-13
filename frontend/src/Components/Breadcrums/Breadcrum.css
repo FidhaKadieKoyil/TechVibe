@@ -1,0 +1,25 @@
+/* Breadcrum.css */
+
+.breadcrum {
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrum img {
+    width: 10px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 5px; /* Adjust spacing between icons */
+  }
+  
+  
+  
+  .breadcrum img:first-child {
+    transform: rotate(0deg); /* Rotate the first arrow icon */
+  }
+  
+  .breadcrum img:first-child, .breadcrum img:not(:first-child) {
+    margin: 0 10px;
+  }
+  

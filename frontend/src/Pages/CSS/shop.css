@@ -1,0 +1,51 @@
+/* Base styles for larger screens */
+.shop-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero, .popular, .advertise {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Specific styles for each component */
+  .hero {
+    height: 300px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Example background color */
+  }
+  
+  .popular {
+    padding: 20px;
+    background-color: #fff; /* Example background color */
+  }
+  
+  .advertise {
+    padding: 20px;
+    background-color: #f8f8f8; /* Example background color */
+  }
+  
+  /* Media Queries */
+  
+  /* iPads and smaller tablets */
+  @media (max-width: 1024px) {
+    .hero {
+      height: 250px; /* Adjust height for tablets */
+    }
+  
+    .popular, .advertise {
+      padding: 15px; /* Adjust padding for tablets */
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 768px) {
+    .hero {
+      height: 200px; /* Adjust height for mobile */
+    }
+  
+    .popular, .advertise {
+      padding: 10px; /* Adjust padding for mobile */
+    }
+  }
+  
