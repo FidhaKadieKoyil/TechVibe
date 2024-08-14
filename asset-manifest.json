@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TechVibe/static/css/main.3acd401e.css",
-    "main.js": "/TechVibe/static/js/main.7c957817.js",
+    "main.css": "/TechVibe/static/css/main.f66dee75.css",
+    "main.js": "/TechVibe/static/js/main.4bc7ebf7.js",
     "static/js/453.8ab44547.chunk.js": "/TechVibe/static/js/453.8ab44547.chunk.js",
     "static/media/men5.jpg": "/TechVibe/static/media/men5.701c3fa92f3d9615b8e7.jpg",
     "static/media/women8.jpg": "/TechVibe/static/media/women8.ded8133f8e6282722927.jpg",
@@ -16,12 +16,12 @@
     "static/media/product_3.jpeg": "/TechVibe/static/media/product_3.3387036e16022c5f48a0.jpeg",
     "static/media/remove.png": "/TechVibe/static/media/remove.ea5c2f03783ec889d860.png",
     "index.html": "/TechVibe/index.html",
-    "main.3acd401e.css.map": "/TechVibe/static/css/main.3acd401e.css.map",
-    "main.7c957817.js.map": "/TechVibe/static/js/main.7c957817.js.map",
+    "main.f66dee75.css.map": "/TechVibe/static/css/main.f66dee75.css.map",
+    "main.4bc7ebf7.js.map": "/TechVibe/static/js/main.4bc7ebf7.js.map",
     "453.8ab44547.chunk.js.map": "/TechVibe/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3acd401e.css",
-    "static/js/main.7c957817.js"
+    "static/css/main.f66dee75.css",
+    "static/js/main.4bc7ebf7.js"
   ]
 }
