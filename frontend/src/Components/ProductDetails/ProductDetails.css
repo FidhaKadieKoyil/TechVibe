@@ -56,6 +56,10 @@
   font-size: 20px;
   font-weight: 600;
 }
+.productdisplay-right-description span{
+
+  font-style: bold;
+}
 .productdisplay-right-sizes {
   display: flex;
   gap: 20px;
