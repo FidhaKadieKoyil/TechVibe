@@ -36,15 +36,9 @@ const ProductDetails = (props) => {
             </div>
             <div className='productdisplay-right'>
                 <h1>{product.name}</h1>
-                <div className='productdisplay-right-star'>
-                    <img src={star1} alt='' />
-                    <img src={star1} alt='' />
-                    <img src={star1} alt='' />
-                    <img src={star1} alt='' />
-                    <img src={star2} alt='' />
-                    <p>(122)</p>
-                </div>
+                
                 <div className='productdisplay-right-prices'>
+                <span>Price:</span>
                     <div className='productdisplay-right-price-old'>${product.old_price}</div>
                     <div className='productdisplay-right-price-new'>${product.new_price}</div>
                 </div>
@@ -55,6 +49,14 @@ const ProductDetails = (props) => {
                 <p className='productdisplay-right-category'>
                         <span>Category:</span> {product.category}
                 </p>
+                <div className='productdisplay-right-star'>
+                    <img src={star1} alt='' />
+                    <img src={star1} alt='' />
+                    <img src={star1} alt='' />
+                    <img src={star1} alt='' />
+                    <img src={star2} alt='' />
+                    <p>(122)</p>
+                </div>
                 <div className='productdisplay-right-size'>
                     <h1>Select size</h1>
                     <div className='productdisplay-right-sizes'>
