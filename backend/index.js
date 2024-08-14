@@ -1,4 +1,5 @@
-const port = process.env.PORT || 4000;
+//const port = process.env.PORT || 4000;
+const port = 4000;
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -12,12 +13,10 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect("mongodb+srv://fidhakk:ibrayisara@cluster0.i4lwajo.mongodb.net/Ecommerce?retryWrites=true&w=majority&appName=Cluster0", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-})
-.then(() => console.log("Database connected successfully"))
-.catch(err => console.error("Database connection error:", err));
+});
 
 // API Creation
 app.get("/", (req, res) => {
